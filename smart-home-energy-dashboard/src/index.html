@@ -1,0 +1,24 @@
+<!-- filepath: smart-home-energy-dashboard/src/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Energy Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Home Energy Dashboard</h1>
+        <canvas id="energyChart"></canvas>
+        <div class="controls">
+            <label for="budgetInput">Set Energy Budget (kWh):</label>
+            <input type="number" id="budgetInput" value="100">
+            <button onclick="updateBudget()">Set Budget</button>
+        </div>
+        <p id="alertMessage"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
